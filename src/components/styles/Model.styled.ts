@@ -19,8 +19,24 @@ const ModelStyles = styled.div<ModelProps>`
         justify-content: space-around;
         align-items: center;
     }
-    .textos {
+
+    h1 {
+        font-size: 40px;
         text-align: center
+    }
+    p {
+        font-size: 14px;
+        text-align: center
+    }
+
+    button {
+        width: 264px;
+        height: 40px;
+        border: none;
+        margin: 0 12px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 14px;
     }
 `
 

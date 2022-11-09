@@ -11,7 +11,7 @@ const NavbarStyles = styled.div`
     align-items: center;
 
     .container {
-        width: 1000px;
+        width: 1200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -28,7 +28,9 @@ const NavbarStyles = styled.div`
     }
     ul li {
         list-style: none;
-        margin: 0 10px;
+        margin: 0 12px;
+        font-size: 14px;
+        font-weight: 400;
     }
 `
 
