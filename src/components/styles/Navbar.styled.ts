@@ -7,7 +7,6 @@ const NavbarStyles = styled.div`
     width: 100%;
     height: 50px;
 
-    background-color: pink;
     display: flex;
     align-items: center;
 
@@ -25,8 +24,6 @@ const NavbarStyles = styled.div`
     }
 
     ul {
-        background-color: red;
-
         display: flex;
     }
     ul li {
