@@ -16,14 +16,15 @@ const ModelStyles = styled.div<ModelProps>`
 
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
     h1 {
         font-size: 40px;
-        text-align: center
+        text-align: center;
     }
+    
     p {
         font-size: 14px;
         text-align: center
@@ -32,11 +33,21 @@ const ModelStyles = styled.div<ModelProps>`
     button {
         width: 264px;
         height: 40px;
-        border: none;
         margin: 0 12px;
+
+        border: none;
         border-radius: 4px;
+
         font-weight: bold;
         font-size: 14px;
+    }
+
+    .seta-baixo {
+        width: 30px;
+        height: 30px;
+        
+        position: absolute;
+        bottom: 30px;
     }
 `
 

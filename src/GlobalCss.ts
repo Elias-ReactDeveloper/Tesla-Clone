@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.cdnfonts.com/css/gotham-ssm');
 
     * {
         box-sizing: border-box;
@@ -10,8 +11,8 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
 
-    body {
-        font-family: 'Montserrat', sans-serif;
+    body, button {
+        font-family: 'Gotham SSm', sans-serif;
     }
 
     h1, p, li {

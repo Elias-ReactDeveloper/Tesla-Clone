@@ -21,16 +21,28 @@ const NavbarStyles = styled.div`
     img {
         width: 120px;
         height: 24px;
+        cursor: pointer;
     }
 
     ul {
         display: flex;
     }
+
     ul li {
         list-style: none;
-        margin: 0 12px;
-        font-size: 14px;
-        font-weight: 400;
+
+        padding: 8px 12px;
+
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+
+        transition: background-color 0.1s;
+    }
+
+    ul li:hover {
+        background-color: #C2CDD8;
+        border-radius: 5px;
     }
 `
 
