@@ -1,5 +1,3 @@
-
 div {
-    box-sizing: content-box;
-    background-repeat: no-repeat;
-}
+    -moz-animation-iteration-count: 2;
+}   

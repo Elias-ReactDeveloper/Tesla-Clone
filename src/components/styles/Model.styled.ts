@@ -48,6 +48,8 @@ const ModelStyles = styled.div<ModelProps>`
         
         position: absolute;
         bottom: 30px;
+
+        animation: seta 3s ease-in infinite;
     }
 
     @media(max-width: 820px) and (min-width: 630px) {
@@ -65,6 +67,33 @@ const ModelStyles = styled.div<ModelProps>`
             display: block;
             width: 90%;
             margin: 10px auto;
+        }
+    }
+
+    /* ANIMAÇÕES */
+    @keyframes seta {
+        0% {
+            bottom: 30px;
+        }
+        
+        10% {
+            bottom: 25px;
+        }
+
+        20% {
+            bottom: 30px;
+        }
+
+        30% {
+            bottom: 26px;
+        }
+
+        40% {
+            bottom: 30px;
+        }
+
+        100% {
+            bottom: 30px;
         }
     }
 
