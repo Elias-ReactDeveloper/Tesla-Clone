@@ -15,7 +15,7 @@ const Model: React.FC<ModelProps> = ({ bgImg }) => {
                     <p>Order Online for <u>Touchless Delivery</u></p>
                 </div>
 
-                <div style={ { marginBottom: "110px" } }>
+                <div className='botoes' style={ { marginBottom: "110px" } }>
                     <button style={ { backgroundColor: "#3B3D41", color: "#fff"} }>Custom Order</button>
                     <button style={ { backgroundColor: "#E7E8E6", color: "#393C41"} }>Existing Inventory</button>
                 </div>

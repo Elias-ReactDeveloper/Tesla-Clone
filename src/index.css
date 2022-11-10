@@ -1,4 +1,5 @@
 
 div {
-    background-color: #9099a1;
+    box-sizing: content-box;
+    background-repeat: no-repeat;
 }

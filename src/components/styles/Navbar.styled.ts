@@ -44,6 +44,26 @@ const NavbarStyles = styled.div`
         background-color: #C2CDD8;
         border-radius: 5px;
     }
+
+    .menu-1200 {
+        display: none;
+    }
+
+    @media(max-width: 1200px) {
+        .container {
+            width: 100%;
+            padding: 0 25px;
+        }
+        ul {
+            display: none;
+        }
+        .menu-1200 {
+            display: initial;
+
+            background-color: #C2CDD8;
+            border-radius: 5px;
+        }
+    }
 `
 
 export default NavbarStyles
