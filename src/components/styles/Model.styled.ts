@@ -31,10 +31,12 @@ const ModelStyles = styled.div<ModelProps>`
         position: absolute;
         top: 150px;
 
+        opacity: 0;
+
         animation-name: model-h1;
-        animation-duration: 1s;
-        /*animation-delay: 2s;
-        animation-fill-mode: forwards;*/
+        animation-duration: .3s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards;
     }
     
     p {
@@ -42,6 +44,18 @@ const ModelStyles = styled.div<ModelProps>`
         
         position: absolute;
         top: 200px;
+
+        opacity: 0;
+
+        animation-name: model-p;
+        animation-duration: .3s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .botoes {
+        position: absolute;
+        bottom: 100px;
     }
 
     button {
@@ -54,9 +68,24 @@ const ModelStyles = styled.div<ModelProps>`
 
         font-weight: bold;
         font-size: 14px;
+    }
 
-        position: absolute;
-        bottom: 100px;
+    .botoes button:first-child{
+        opacity: 0;
+
+        animation-name: botao-esquerdo;
+        animation-duration: .5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .botoes button:last-child {
+        opacity: 0;
+
+        animation-name: botao-direito;
+        animation-duration: .5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
     }
 
     .seta-baixo {
@@ -80,11 +109,28 @@ const ModelStyles = styled.div<ModelProps>`
         .botoes {
             width: 100%;
         }
+
         button {
             display: block;
             width: 90%;
             margin: 10px auto;
         }
+
+        .botoes button:first-child,
+        .botoes button:last-child {
+            animation: none;
+            opacity: 1;
+        }
+        .botoes {
+            animation-name: botoes-600px;
+            animation-duration: .3s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+
+
+        
     }
 
     /* ANIMAÇÕES */
@@ -115,16 +161,59 @@ const ModelStyles = styled.div<ModelProps>`
     }
 
     @keyframes model-h1 {
-   
         from {
+            opacity: 1;
             top: 180px;
         }
         to {
             top: 150px;
+            opacity: 1;
         }
-    
     }
 
+    @keyframes model-p {
+        from {
+            opacity: 1;
+            top: 230px;
+        }
+        to {
+            top: 200px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes botao-direito {
+        from {
+            margin-left: 30px;
+            opacity: 0;
+        }
+        to {
+            margin-left: 5px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes botao-esquerdo {
+        from {
+            margin-right: 30px;
+            opacity: 0;
+        }
+        to {
+            margin-right: 5px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes botoes-600px {
+        from {
+            bottom: 80px;
+            opacity: 0;
+        }
+        to {
+            bottom: 100px;
+            opacity: 1;
+        }
+    }
 
   
 `
