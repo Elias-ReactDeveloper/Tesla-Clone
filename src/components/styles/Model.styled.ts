@@ -16,18 +16,32 @@ const ModelStyles = styled.div<ModelProps>`
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nome-descricao {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
     h1 {
         font-size: 40px;
-        text-align: center;
+
+        position: absolute;
+        top: 150px;
+
+        animation-name: model-h1;
+        animation-duration: 1s;
+        /*animation-delay: 2s;
+        animation-fill-mode: forwards;*/
     }
     
     p {
         font-size: 14px;
-        text-align: center
+        
+        position: absolute;
+        top: 200px;
     }
 
     button {
@@ -40,6 +54,9 @@ const ModelStyles = styled.div<ModelProps>`
 
         font-weight: bold;
         font-size: 14px;
+
+        position: absolute;
+        bottom: 100px;
     }
 
     .seta-baixo {
@@ -96,6 +113,18 @@ const ModelStyles = styled.div<ModelProps>`
             bottom: 30px;
         }
     }
+
+    @keyframes model-h1 {
+   
+        from {
+            top: 180px;
+        }
+        to {
+            top: 150px;
+        }
+    
+    }
+
 
   
 `

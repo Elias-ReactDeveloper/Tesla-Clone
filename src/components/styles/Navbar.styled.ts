@@ -22,6 +22,8 @@ const NavbarStyles = styled.div`
         width: 120px;
         height: 24px;
         cursor: pointer;
+
+        animation: aparecer 1s;
     }
 
     ul {
@@ -38,6 +40,8 @@ const NavbarStyles = styled.div`
         cursor: pointer;
 
         transition: background-color 0.1s;
+
+        animation: aparecer 1s;
     }
 
     ul li:hover {
@@ -64,6 +68,15 @@ const NavbarStyles = styled.div`
             border-radius: 5px;
         }
     }
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+   }
 `
 
 export default NavbarStyles
