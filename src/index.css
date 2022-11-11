@@ -1,5 +1,8 @@
-div {
-   animation: ;
-}   
 
-.elemento:last-child { estilos }
+:root {
+    --cor-font: #393C41;
+}
+
+div {
+    color: var(--cor-fonte);
+}
