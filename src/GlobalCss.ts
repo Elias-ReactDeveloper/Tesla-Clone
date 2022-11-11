@@ -15,8 +15,12 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Gotham SSm', sans-serif;
     }
 
-    h1, p, li {
+    h1, p, li, a{
         color: #171A20;
+    }
+
+    a {
+        text-decoration: none;
     }
 
 `

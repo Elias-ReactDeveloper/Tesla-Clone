@@ -2,7 +2,7 @@ import Model from "./components/Model"
 import GlobalStyle from './GlobalCss'
 import Navbar from "./components/Navbar"
 
-import model3 from './assets/model-3.jpg'
+import carros from "./data/carros.json"
 
 function App() {
   return (
@@ -10,9 +10,10 @@ function App() {
       <GlobalStyle />
       
       <Navbar />
-      <Model bgImg={model3} />
 
-      Outros components
+      {
+        carros.map((carro) => <Model carro={carro} key={carro.id} />)
+      }
     </div>
   )
 }

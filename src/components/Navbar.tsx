@@ -4,7 +4,6 @@ import NavbarStyles from "./styles/Navbar.styled";
 import ManuLateral from "./MenuLateral";
 import Logo from '../assets/logo.svg'
 
-
 const Navbar = () => {
 
     const [menuLateralAberto, setMenuLateralAberto] = useState<Boolean>(false)
@@ -22,12 +21,12 @@ const Navbar = () => {
             <div className="container">
                 <img src={Logo} alt="" />
                 <ul>
-                    <li>Model S</li>
-                    <li>Model 3</li>
-                    <li>Model X</li>
-                    <li>Model Y</li>
-                    <li>Solar Roof</li>
-                    <li>Solar Panels</li>
+                    <li><a href="http://localhost:5173/#models">Model S</a></li>
+                    <li><a href="http://localhost:5173/#model3">Model 3</a></li>
+                    <li><a href="http://localhost:5173/#modelx">Model X</a></li>
+                    <li><a href="http://localhost:5173/#modely">Model Y</a></li>
+                    <li><a href="http://localhost:5173/#solarroof">Solar Roof</a></li>
+                    <li><a href="http://localhost:5173/#solarpanels">Solar Panels</a></li>
                 </ul>
                 <ul>
                     <li>Shop</li>

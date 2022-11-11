@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 import Model from '../Model'
 
-import { ModelProps } from '../Model'
+interface IProps {
+    bgImg: string
+}
 
-const ModelStyles = styled.div<ModelProps>`
+const ModelStyles = styled.div<IProps>`
     
     width: 100%;
     height: 100vh;
@@ -13,6 +15,8 @@ const ModelStyles = styled.div<ModelProps>`
         height: 100%; 
         background-position: center;
         background-size: cover;
+
+        position: relative;
 
         display: flex;
         flex-direction: column;
