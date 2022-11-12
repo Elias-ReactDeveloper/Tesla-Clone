@@ -2,7 +2,7 @@ import Model from "./components/Model"
 import GlobalStyle from './GlobalCss'
 import Navbar from "./components/Navbar"
 
-import carros from "./data/carros.json"
+import produtos from "./data/produtos.json"
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
 
       {
-        carros.map((carro) => <Model carro={carro} key={carro.id} />)
+        produtos.map((produto) => <Model produto={produto} key={produto.id} />)
       }
     </div>
   )
