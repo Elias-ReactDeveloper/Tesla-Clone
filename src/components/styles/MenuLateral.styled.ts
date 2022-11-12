@@ -8,7 +8,7 @@ const MenuLateral = styled.div`
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 2;
 
         backdrop-filter: blur(2.5px);
     }

@@ -132,8 +132,6 @@ const ModelStyles = styled.div<IProps>`
             animation-fill-mode: forwards;
             opacity: 0;
         }
-
-
         
     }
 

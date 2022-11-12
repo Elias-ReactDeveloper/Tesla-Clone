@@ -37,13 +37,6 @@ const ManuLateral: FC<IProps> = (props) => {
                     <li>Find Us</li>
                     <li>Support</li>
                     <li>Investor Relations</li>
-                    <li>Charging</li>
-                    <li>Powerwall</li>
-                    <li>Commercial Energy</li>
-                    <li>Utilities</li>
-                    <li>Find Us</li>
-                    <li>Support</li>
-                    <li>Investor Relations</li>
                 </ul>
             </div>
         </div>

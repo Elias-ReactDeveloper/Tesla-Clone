@@ -1,5 +1,4 @@
 import ModelStyles from './styles/Model.styled'
-
 import DownArrow from '../assets/down-arrow.svg'
 
 export interface ModelProps {

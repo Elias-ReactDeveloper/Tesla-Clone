@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <NavbarStyles>
             <div className="container">
-                <img src={Logo} alt="" />
+                <a href="http://localhost:5173"><img src={Logo} alt="" /></a>
                 <ul>
                     <li><a href="http://localhost:5173/#models">Model S</a></li>
                     <li><a href="http://localhost:5173/#model3">Model 3</a></li>
