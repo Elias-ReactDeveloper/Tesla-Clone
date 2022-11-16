@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-const MenuLateral = styled.div`
+interface IProps {
+    aberto: Boolean
+}
+
+const MenuLateral = styled.div<IProps>`
     .container {
         width: 100%;
         height: 100vh;
@@ -11,6 +15,9 @@ const MenuLateral = styled.div`
         z-index: 2;
 
         backdrop-filter: blur(2.5px);
+
+        transform: ${ ({aberto}) => aberto ? "translateX(0)" : "translateX(100%)" };
+        transition: all .5s;
     }
 
     .menu {

@@ -1,8 +1,8 @@
 import ModelStyles from './styles/Model.styled'
 import DownArrow from '../assets/down-arrow.svg'
-import { css } from 'styled-components'
 
 export interface ModelProps {
+    indice: number
     produto: {
         id: number
         titulo: string
@@ -11,7 +11,7 @@ export interface ModelProps {
     }
 }
 
-const Model: React.FC<ModelProps> = ({ produto }) => {
+const Model: React.FC<ModelProps> = ({ produto, indice }) => {
 
     const idCss = produto.titulo.split(" ").join("").toLowerCase()
 
@@ -33,11 +33,13 @@ const Model: React.FC<ModelProps> = ({ produto }) => {
                 </div>
 
                 {
-                    produto.id === 0 ? <img
-                        src={DownArrow}
-                        className='seta-baixo'
-                        alt=""
-                    /> : null
+                    indice === 0 ? 
+                        <img
+                            src={DownArrow}
+                            className='seta-baixo'
+                            alt=""
+                        /> 
+                    : null
                 }
            
             </div>

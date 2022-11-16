@@ -10,12 +10,10 @@ const Navbar = () => {
 
     return ( <div>
         
-        { menuLateralAberto && 
-            <ManuLateral 
-                menuLateralAberto={menuLateralAberto} 
-                setMenuLateralAberto={setMenuLateralAberto}
-            /> 
-        }
+        <ManuLateral 
+            menuLateralAberto={menuLateralAberto} 
+            setMenuLateralAberto={setMenuLateralAberto}
+        /> 
 
         <NavbarStyles>
             <div className="container">

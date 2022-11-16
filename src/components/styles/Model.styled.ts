@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Model from '../Model'
 
 interface IProps {
     bgImg: string

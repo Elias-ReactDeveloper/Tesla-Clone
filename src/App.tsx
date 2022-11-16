@@ -12,7 +12,9 @@ function App() {
       <Navbar />
 
       {
-        produtos.map((produto) => <Model produto={produto} key={produto.id} />)
+        produtos.map((produto, indice) => 
+          <Model produto={produto} indice={indice} key={produto.id} />
+        )
       }
     </div>
   )
