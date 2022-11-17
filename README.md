@@ -2,8 +2,8 @@
 
 ## Clone do site da famosa Tesla
 
-Esse projeto,m feito em **React** usando **Styled-components**, tenta clonar a UI do site da Tesla(https://www.tesla.com). <br />
-Demonstração do funcionamento em 
+Esse projeto, feito em **React** usando **Styled-components**, tenta clonar a UI do site da Tesla(https://www.tesla.com). <br />
+Demonstração do funcionamento em https://youtu.be/XZmmxnNU1Dk
 
 ## Como rodar esse projeto na sua máquina
 1. Clone esse projeto
